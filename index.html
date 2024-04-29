@@ -7,7 +7,7 @@
     <link rel="icon" href="./Assets/img/icone.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="./Assets/css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <meta http-equiv="refresh" content="10; url=https://zaiphersecurity.com.br">
+    <meta http-equiv="refresh" content="6; url=https://zaiphersecurity.com.br">
     <title>Zaipher Security</title>
 </head>
 
@@ -42,18 +42,17 @@
     <script>
         // Atualiza o ano no rodapé
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-        // Atualiza a numeração de 0% a 100% em 10 segundos
+        // Atualiza a numeração de 0% a 100% em 5 segundos
         let progressSpan = document.querySelector('.progress');
         let progress = 0;
-        let interval = setInterval(function () {
-            progress++;
+        let interval = setInterval(function() {
+            progress += 2; // Incremento de 2% a cada 100 milissegundos
             if (progress > 100) {
                 clearInterval(interval);
             } else {
                 progressSpan.textContent = progress + '%';
             }
-        }, 100);
+        }, 100); // Intervalo de 100 milissegundos
     </script>
 </body>
-
 </html>
