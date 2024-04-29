@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/img/icone.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./Assets/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta http-equiv="refresh" content="10; url=https://zaiphersecurity.com.br">
+    <title>Zaipher Security</title>
+</head>
+
+<body>
+    <img class="pre-nav-image" src="./Assets/img/banner2.png" alt="Logo">
+    <!--Efeito das engrenagem-->
+    <div class="engrenagem"> </div>
+    <div class="content">
+        <div class="construction">
+            <span class="progress">0%</span>
+        </div>
+    </div>
+    <div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://drive.google.com/file/d/13QQ1m9ktc6Q-Jmn81yRCNsH-WKWacpqI/view?usp=sharing"><img
+                    src="./Assets/img/banner2.png" alt="Logo da Zapher Security"></a>
+            <p>© <span id="currentYear"></span> Todos os direitos reservados</p>
+        </div>
+        <!-- Redes sociais-->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/zaiphersec.official?igsh=NXU4ZDRpNHducTd0" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="URL_DO_TIKTOK" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="URL_DO_WHATSAPP" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/company/rodrigues-empreendimentos-sjn/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Atualiza a numeração de 0% a 100% em 10 segundos
+        let progressSpan = document.querySelector('.progress');
+        let progress = 0;
+        let interval = setInterval(function () {
+            progress++;
+            if (progress > 100) {
+                clearInterval(interval);
+            } else {
+                progressSpan.textContent = progress + '%';
+            }
+        }, 100);
+    </script>
+</body>
+
+</html>
